@@ -1,0 +1,143 @@
+/* Main container for the skills table */
+.table-main-container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 4rem 1rem 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 3rem;
+}
+
+/* Header above the table */
+.table-main-header {
+    width: 97%;
+    height: 80px;
+    background: #9929EA;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transform: translateY(50%);
+}
+
+/* Header text */
+.table-header-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 19.36px;
+    color: #FFFFFF;
+}
+
+/* Add Skill button */
+.table-btn {
+    background-color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.table-btn:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Skill statistics section */
+.task-status-card-container {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.add-task-inner-div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.todo-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Stat card rows */
+.stat-first-row,
+.stat-second-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* Individual stat card */
+.stats-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+    background-color: #fff;
+}
+
+/* Background colors for stat cards */
+.container-bg1 { background-color: #E0F7FA; }
+.container-bg2 { background-color: #FFF3E0; }
+.container-bg3 { background-color: #FCE4EC; }
+.container-bg4 { background-color: #E8F5E9; }
+
+.stats-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.stats-num {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.stats-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .table-main-header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        transform: none;
+    }
+
+    .table-btn {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .stat-first-row,
+    .stat-second-row {
+        flex-direction: column;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
